@@ -1,0 +1,19 @@
+﻿<h2>Index</h2>
+
+Home Page
+
+<br />
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div>
+        @Html.ActionLink("Sign up", "Register")
+    </div>
+    <br />
+
+    <div>
+        @Html.ActionLink("Log in", "Login")
+    </div>
+}
+
+
